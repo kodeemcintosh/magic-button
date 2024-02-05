@@ -1,0 +1,41 @@
+{
+  "name": "magic-button",
+  "author": {
+    "name": "Kodee McIntosh",
+    "email": "dev@kodee.xyz",
+    "url": "https://kodee.xyz"
+  },
+  "license": "MIT",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c --bundleConfigAsCjs"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "rollup": "^4.6.1",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-terser": "^7.0.2",
+    "tailwindcss": "^3.3.6",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "dependencies": {
+    "wagmi": "^1.4.10"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/kodeemcintosh"
+  }
+}
